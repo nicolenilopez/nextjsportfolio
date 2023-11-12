@@ -14,31 +14,26 @@ const TAB_DATA = [
         <li>HTML</li>
         <li>CSS</li>
         <li>C++</li>
-        <li>React</li>
-        <li>PostgreSQL</li>
-        <li>Graphic Design</li>
       </ul>
     ),
   },
   {
-    title: "estudios",
-    id: "estudios",
+    title: "education",
+    id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>IES Torres I Bages</li>
-        <li>Institut Obert de Catalunya</li>
+        <li>University</li>
+        <li>University</li>
       </ul>
     ),
   },
   {
-    title: "Idiomas",
-    id: "idiomas",
+    title: "languages",
+    id: "languages",
     content: (
       <ul className="list-disc pl-2">
-        <li>Español - Nativo</li>
-        <li>Inglés - Avanzado</li>
-        <li>Catalán - Intermedio</li>
-        <li>Francés - Básico</li>
+        <li>Language</li>
+        <li>Language</li>
       </ul>
     ),
   },
@@ -61,12 +56,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4 mt-10">About Me</h2>
           <p className="text-base lg:text-lg">
-            Soy una estudiante de Desarrollo de Aplicaciones Web con pasión por crear aplicaciones web 
-            interactivas y responsivas. 
-            <br></br>
-            Mi capacidad de adaptación es rápida y constantemente busco mejorar mis conocimientos y habilidades. 
-            Disfruto trabajar en equipo y me entusiasma colaborar con otros para desarrollar aplicaciones 
-            extraordinarias. 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut sagittis mi. Sed malesuada at justo vel auctor. Duis nisi dui, maximus sit amet dignissim et, maximus in urna. Nulla dolor justo, dapibus at enim et, porttitor consequat mauris.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -74,21 +64,21 @@ const AboutSection = () => {
               active={tab === "skills"}
             >
               {" "}
-              Habilidades{" "}
+              Skills{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("estudios")}
-              active={tab === "estudios"}
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}
             >
               {" "}
-              Estudios{" "}
+              Education{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("idiomas")}
-              active={tab === "idiomas"}
+              selectTab={() => handleTabChange("languages")}
+              active={tab === "languages"}
             >
               {" "}
-              Idiomas{" "}
+              Languages{" "}
             </TabButton>
           </div>
           <div className="mt-8">

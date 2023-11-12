@@ -47,8 +47,9 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          Actualmente estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está
-          abierta. Si tienes alguna pregunta o simplemente quieres contactar conmigo, haré todo lo posible para responderte.
+          I&apos;m currently looking for new opportunities, my inbox is always
+          open. Whether you have a question or just want to say hi, I&apos;ll
+          try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="github.com">
@@ -62,7 +63,7 @@ const EmailSection = () => {
       <div>
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
-            ¡Email enviado exitosamente!
+            Email sent successfully!
           </p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
@@ -71,7 +72,7 @@ const EmailSection = () => {
                 htmlFor="email"
                 className="text-white block mb-2 text-sm font-medium"
               >
-                Email
+                Your Email
               </label>
               <input
                 name="email"
@@ -87,7 +88,7 @@ const EmailSection = () => {
                 htmlFor="subject"
                 className="text-white block text-sm mb-2 font-medium"
               >
-                Asunto
+                Subject
               </label>
               <input
                 name="subject"
@@ -95,7 +96,7 @@ const EmailSection = () => {
                 id="subject"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Escribir el asunto aquí..."
+                placeholder="The subject goes here..."
               />
             </div>
             <div className="mb-6">
@@ -103,20 +104,20 @@ const EmailSection = () => {
                 htmlFor="message"
                 className="text-white block text-sm mb-2 font-medium"
               >
-                Mensaje
+                Message
               </label>
               <textarea
                 name="message"
                 id="message"
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Escribir el mensaje aquí..."
+                placeholder="Your message goes here..."
               />
             </div>
             <button
               type="submit"
               className="bg-primary-400 hover:bg-primary-500 text-white font-medium py-2.5 px-5 rounded-lg w-full"
             >
-              Enviar Mensaje
+              Send Message
             </button>
           </form>
         )}

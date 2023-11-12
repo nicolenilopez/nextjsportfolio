@@ -23,9 +23,7 @@ const HeroSection = () => {
                 <span style={{ whiteSpace: 'nowrap', overflow: 'hidden' }}>
                 <TypeAnimation
                   sequence={[
-                    "Nicole",
-                    1000,
-                    "Student",
+                    "Portfolio",
                     1000,
                     "Web Developer",
                     1000,
@@ -42,24 +40,21 @@ const HeroSection = () => {
                 </h1>
                 <br></br>
                 <p className="text-[#C5C6C7] text-base sm:text-lg mb-6 lg:text-xl"> 
-                    Bienvenido a mi portafolio, a través de este sitio, te invito a explorar 
-                    mis proyectos y trabajos, donde podrás descubrir mi creatividad, habilidades y dedicación.
-                    <br></br>
-                    Gracias por visitar mi sitio web, y espero que disfrutes explorando mi trabajo tanto como yo disfruté creándolo.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
                 </p>
                 <div>
                 <Link
                     href="/contact"
                     className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
                   >
-                    Contacto
+                    Contact Me
                   </Link>
                   <Link
                     href="/"
                     className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
                   >
                     <span className="block bg-[#121212] hover:bg-slate-900 rounded-full px-5 py-2">
-                      Descargar CV
+                    Download CV
                     </span>
                   </Link>
                 </div>
